@@ -1,4 +1,4 @@
-//graph theory (BFS)
+//Graph theory (BFS)
 import java.io.*;
 import java.util.*;
 public class Main {
