@@ -1,4 +1,4 @@
-//simulation
+//Simulation
 #include <bits/stdc++.h>
 using namespace std;
 
