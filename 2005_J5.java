@@ -1,3 +1,4 @@
+//String algorithm
 import java.io.*;
 import java.util.*;
 public class Main {
@@ -10,7 +11,7 @@ public class Main {
 	   	 return st.nextToken();
 	}
 
-	public static boolean test(String str) {
+	public static boolean fun(String str) {
 		while (str.contains("ANA") || str.contains("BAS")) {
 			str = str.replace("ANA", "A");
 			str = str.replace("BAS", "A");
@@ -21,7 +22,7 @@ public class Main {
 	public static void main(String[] args) throws IOException{
 		String input = next();
 		while (!input.equals("X")) {
-			if(test(input)) {System.out.println("YES");} else {System.out.println("NO");}
+			if(fun(input)) {System.out.println("YES");} else {System.out.println("NO");}
 			input = next();
 		}
 	}
