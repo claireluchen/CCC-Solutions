@@ -1,6 +1,6 @@
+//Simulation
 import java.io.*;
 import java.util.*;
-import java.math.BigInteger;
 public class Main {
     public static void main(String[] args) throws IOException {
 		int b = readInt(); //width of the board/num of columns
