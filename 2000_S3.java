@@ -13,7 +13,7 @@ public class Main {
 	  return Integer.parseInt(next());
 	}
 	static String readLine () throws IOException {
-	    return br.readLine().trim();
+	  return br.readLine().trim();
 	}
   
   public static void main(String[] args) throws IOException{
