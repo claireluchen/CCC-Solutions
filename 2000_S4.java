@@ -2,16 +2,6 @@
 import java.util.*;
 import java.io.*;
 public class Main {
-	static StringTokenizer st;
-	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	static String next () throws IOException {
-	  while (st == null || !st.hasMoreTokens())
-	  st = new StringTokenizer(br.readLine().trim());
-	  return st.nextToken();
-	}
-	static int readInt () throws IOException {
-	  return Integer.parseInt(next());
-	}
   
   public static void main(String[] args) throws IOException{ 
     int distance = readInt();
@@ -34,5 +24,20 @@ public class Main {
     if (least[distance] >= 5281) System.out.println("Roberta acknowledges defeat.");
     else System.out.printf("Roberta wins in %d strokes.", least[distance]);
   }
+	
+	//fast i/o
+	static StringTokenizer st;
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static String next () throws IOException {
+	  while (st == null || !st.hasMoreTokens())
+	  st = new StringTokenizer(br.readLine().trim());
+	  return st.nextToken();
+	}
+	static int readInt () throws IOException {
+	  return Integer.parseInt(next());
+	}
+	static String readLine () throws IOException {
+	  return br.readLine().trim();
+	}
   
 }
