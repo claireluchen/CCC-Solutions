@@ -1,21 +1,7 @@
 //Graph theory (BFS), string
 import java.util.*;
 import java.io.*;
-public class Main {
-	static StringTokenizer st;
-	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	static String next () throws IOException {
-	  while (st == null || !st.hasMoreTokens())
-	  st = new StringTokenizer(br.readLine().trim());
-	  return st.nextToken();
-	}
-	static int readInt () throws IOException {
-	  return Integer.parseInt(next());
-	}
-	static String readLine () throws IOException {
-	  return br.readLine().trim();
-	}
-  
+public class Main {  
   public static void main(String[] args) throws IOException{
     int N = readInt();
     Map<String, ArrayList<String>> map = new HashMap<>();
@@ -82,4 +68,19 @@ public class Main {
       fromTo.remove(0); fromTo.remove(0);
     }
   }
+	
+	//fast i/o
+	static StringTokenizer st;
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static String next () throws IOException {
+	  while (st == null || !st.hasMoreTokens())
+	  st = new StringTokenizer(br.readLine().trim());
+	  return st.nextToken();
+	}
+	static int readInt () throws IOException {
+	  return Integer.parseInt(next());
+	}
+	static String readLine () throws IOException {
+	  return br.readLine().trim();
+	}
 }
