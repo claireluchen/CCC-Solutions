@@ -1,4 +1,4 @@
-//dynamic programming
+//Dynamic programming
 #include <bits/stdc++.h>
 using namespace std;
 
