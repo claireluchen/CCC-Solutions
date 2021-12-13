@@ -28,5 +28,5 @@ int main() {
   }
 
   cout << "good" << endl;
-	return 0;
+  return 0;
 }
