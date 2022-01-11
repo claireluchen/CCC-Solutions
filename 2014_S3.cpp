@@ -24,7 +24,8 @@ int main() {
       int cur = arr[i];
       if (lake + 1 == cur) {
         lake++;
-      }else{
+      }else{ //if it can't go straight down into the lake, it might be able to wait-it-out in the branch
+       //it's either directly discarding and resulting in "No" (may be invalid) or pushing it aide to the branch in case it can join properly later. choose the latter.
         while (!branch.empty()){
           if (branch.top() == lake + 1){
             lake++;
