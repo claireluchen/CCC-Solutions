@@ -16,7 +16,7 @@ int main() {
   
   cin >> t;
   while(t--){
-    cin >> n >> k >> w;
+    cin >> n >> k >> w; //n pins, k balls, w width
     memset(sum, 0, sizeof(sum));
     memset(pin, 0, sizeof(pin));
     for (int i = 0; i < 505; i++) memset(dp[i], 0, sizeof(dp[i]));
