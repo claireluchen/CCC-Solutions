@@ -1,4 +1,4 @@
-//Interval DP
+//2D DP
 //dp[i][j] represents the max score possible using i balls using pins starting at/after j
 //sum[i] is precalculated and represents the sum of score of the next w pins, starting at i
 #include <bits/stdc++.h>
