@@ -37,14 +37,14 @@ int main() {
   cin >> k;
 
   sort(pos, pos + n);
+ //binary search
   int l = 0, r = pos[n - 1], mid;
   while (l < r){
     mid = (l + r) / 2;
     if (isValid(mid)) r = mid;
     else l = mid + 1;
   }
-  if (isValid(l)) cout << l << endl;
-  else cout << r << endl;
+  cout << l << endl;
   
   return 0;
 }
