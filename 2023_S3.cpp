@@ -21,7 +21,7 @@ int main() {
       cout << "IMPOSSIBLE" << endl; return 0;
     }
     for (int j = 0; j < (m - c) / 2; j++){
-      for (int i = 0; i < r; i++){
+      for (int i = 0; i < n; i++){
         arr[i][j] = ch[i%25];
         arr[i][m-1-j] = ch[i%25];
       }
@@ -34,7 +34,7 @@ int main() {
       cout << "IMPOSSIBLE" << endl; return 0;
     }
     for (int i = 0; i < (n - r) / 2; i++){
-      for (int j = 0; j < c; j++){
+      for (int j = 0; j < m; j++){
         arr[i][j] = ch[j%25];
         arr[n-1-i][j] = ch[j%25];
       }
